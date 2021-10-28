@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplos JQuery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="imagens/JS.png">
+  </head>
+<body>
+  <header>
+    <h1>Exemplos de utilização de eventos com jquery</h1>
+    <p>Vamos a alguns exemplos. Página com eventos possíveis no
+      javascript disponível em 
+      <a href="https://www.w3schools.com/jsref/dom_obj_event.asp"
+       target="_blank">
+       https://www.w3schools.com/jsref/dom_obj_event.asp</a>.
+    </p>
+    <p>Alguns exemplos:</p>
+    <ul>
+      <li><a href="#clicaveis">Evento Click</a></li>
+      <li><a href="#evento-focus">Evento Focus e Blur</a></li>
+    </ul>
+  </header>
+  <section id="clicaveis">
+    <div class="cor-eventos">
+      <span>Aqui iremos demonstrar o click do botão.</span>
+      <button class="clicaveis">Clique-me</button>
+    </div>
+    <div class="cor-eventos">
+      <span>Aqui iremos demonstrar o click em uma imagem.</span>
+      <img class="clicaveis" src="imagens/click-here.png" alt="" 
+      style="width: 200px;">
+    </div>
+    <div class="cor-eventos">
+      <span>Aqui iremos demonstrar o click em uma parte de texto.</span>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+         elit. Distinctio modi quae non dignissimos in minima
+         <b><span class="clicaveis">--> Clique aqui <--</span></b>
+        similique, inventore aliquid, molestias consectetur 
+        dolor id possimus beatae quaerat, assumenda temporibus 
+        quos unde hic.</p>
+    </div>
+    <div class="cor-eventos">
+      <h3>MUITO CUIDADO! Bubbling!</h3>
+      <span>Aqui iremos utilizar o click em mais de um elemento.</span>
+      <div class="clicaveis">
+        <button class="clicaveis">Clique aqui!</button>
+      </div>
+    </div>
+  </section>
+  <section id="evento-focus">
+    <h1>Exemplos de uso do evento focus.</h1>
+    <div class="cor-eventos">
+      <span>Colocando o disparo do evento em um elemento input.</span>
+      <input class="focus-habilitado" type="text">
+    </div>
+    <div class="cor-eventos">
+      <span>Colocando o disparo do evento em um elemento Button.</span>
+      <button class="focus-habilitado">Recebi o focus</button>
+    </div>
+    <div class="cor-eventos">
+      <span>Colocando o disparo do evento em um elemento Img.</span>
+      <img class="focus-habilitado" src="imagens/click-here.png" alt="" 
+      style="width: 200px;" tabindex="0">
+    </div>
+    <div class="cor-eventos">
+      <span>Colocando o disparo do evento em um elemento span.</span>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+         elit. Distinctio modi quae non dignissimos in minima
+         <b><span class="focus-habilitado" tabindex="1">--> Clique aqui <--</span></b>
+        similique, inventore aliquid, molestias consectetur 
+        dolor id possimus beatae quaerat, assumenda temporibus 
+        quos unde hic.</p>
+    </div>
+    <div class="cor-eventos">
+      <h3>Aqui não ocorre Bubbling!</h3>
+      <span>Aqui iremos utilizar o click em mais de um elemento.</span>
+      <div class="focus-habilitado" tabindex="3">
+        <button class="focus-habilitado">Clique aqui!</button>
+      </div>
+    </div>
+  </section>
+  <div class="cor-eventos">
+    <h3>Usando fadein e fadeout</h3>
+    <button id="fadein">Fade-out</button>
+    <button id="fadeout">Fade-in</button>
+    <p id="fadeele">
+      Lorem ipsum dolor sit amet consectetur 
+      adipisicing elit. Ratione sed numquam,
+       ullam sint doloremque provident facilis 
+       commodi, fugiat, dolor ducimus 
+       blanditiis quisquam unde ab odit voluptates ea! 
+       Quidem, officia reprehenderit.
+    </p>
+    <div>
+      <h4>Oi, subi!</h4>
+    </div>
+  </div>
+  <script src="javascript/jquery-3.6.0.min.js"></script>
+  <script src="javascript/script.js"></script>
+</body>
+</html>
